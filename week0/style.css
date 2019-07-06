@@ -1,389 +1,494 @@
-*{
-    padding: 0px;
-    margin: 0px;
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border-radius: 0; /*to fix couble of problems on mobile screen*/
 }
-
-body{
-  padding: 0px;
-  margin: 0px;
-  background-color: #7b91a7; 
-   
+html{
+    font-size: 16px;
 }
-
-.container{
-    width: 960px;
-    margin: auto;
-    
-}
-.header{
-    height: 600px;
-    background-image:url(https://www.retailmenot.com/blog/wp-content/uploads/2018/04/Spring-Travel-Quiz.jpg-1522789220.jpg);
-    background-size: cover;
-   
-}
-
-.navbar{
-    background-color: rgba(0,0,0,.1);
-    height: 50px;
-
-}
-.navbar .list ul{
+ul{
     list-style: none;
-    text-align: center; 
-    
 }
-.navbar .list ul li{
-    margin: 10px auto;
-    display: inline-block;
-    padding: 5px 10px;
-    border-right: 3px solid #cbdbdb;   
-}
-.navbar .list ul li:last-child{
-    border-right:none;
-}
-.navbar .list ul li a{
-    color: white;
-    font-weight:bold;
-    font-size: 20px;
+a{
     text-decoration: none;
 }
-
-.navbar .list ul li.active a,
-.navbar .list ul li a:hover{
-    color: skyblue;
+/***********logo*****************/
+.logo img{
+    margin: 0 0 0 50%;
+    display: block;
 }
-
-.header .slider .content{
-    color:white; 
-    text-align: center;
-    margin-left: 600px;
-    margin-top: 285px;
-    font-size: 28px; 
-}
-
-.header .slider .content span{
-    color: #E91E63;
-    font-size: 100px;
-}
-
-
-/*start group*/
-.groups{
-    height: 363px;
-    overflow: hidden;       
-}
-.groups .group{
-    width: 25%;
-    height: 363px;
-    float: left;
-}
-
-.groups .group h2{
-    color:#ffffff;
-    text-align: center;
-    padding: 34px 0px;
-    margin-top: 18px;
-    
-}
-.groups .group p{
-    padding: 0px 20px;
-    text-align: center;
-    color: #d1d1d1;
-    height: 180px;
-    font-size: 18px;
-    
-}
-.groups .group button{
-    width: 86px;
-    height: 29px;
-    background-color:white;
-    margin: 21px 77px;
-    border: 0;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -o-border-radius: 5px;
-}
-
-.groups .group button:hover{
-    background-color: skyblue;
-}
-
-.green{
-    background-color: #248224;
-}
-.blue1{
-    background-color: #334957;
-}
-.blue2{
-    background-color: #5555a9;
-}
-.red{
-    background-color: #9c1b1b;
-}
-
-/*end group*/
-
-/*start test*/
-
-.test{
-    height: 655px;
-    overflow: hidden; 
-    background-image: url("https://www.snewsnet.com/.image/t_share/MTU3OTM0NzA5NDc1NjQ5MTcw/llbean.jpg"); 
-    background-size: cover;
-    position: relative;
-}
-
-.test .layer{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+/************navbar****************/
+nav{
     width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,.2)
+    height: auto;
+    background-color: #01689b;
+    overflow: hidden;
+    padding: 20px 0;
 }
-
-.test h1{
-    color: white;
-    text-align: center;
-    padding: 25px ;
-}
-
-.test .a{
+nav span{
+    display: block;
+    width: auto;
     float: left;
-    width: 33.33333%;
-    height: 544px;
-}
-
-.test .a div{
-    width: 97%;
-    background-color: antiquewhite;
-    height: 100%;
-    float: left; 
-    box-shadow: 6px 6px 10px 0px rgba(0,0,0,.5);  
-    background-color: rgba(0,0,0,.50);
-}
-
-.test .a div img{
-    width: 66%;
-    margin: 28px 53px;
-    height: 200px;
-    border-radius: 50%;
-    display: inline-block;
-}
-
-.test .a div h2 {
-    color: skyblue;
-    text-align: center;
-    font-weight: bold;
-    padding: 20px 11px;
-}
-
-.test .a div p {
-    text-align: center;
     color: white;
-    padding:20px 30px;
-    font-size: 16px;
-    line-height: 1.4;
+    font-size: 1.4em;
+    margin-top: auto;
+    font-family: "RO Sans",Calibri,sans-serif;
+    font-weight: 300;
+}
+nav ul{
+    float: right; 
+    margin-top: 0.6vw;
+    margin-right: 5vw;
+    display: none;
+}
+nav ul li{
+    display: inline-block;
+    width: auto;
+    justify-content: flex-start;
+    padding: 0 0.6vw;
+}
+nav ul li a{
+    color: white;
+    font-size: 1.2em;
+    padding: 0.5vw  ;
+    text-decoration: none;
+    font-family:"RO Sans",Calibri,sans-serif;
+}
+nav .home{
+    margin-left: 5vw;
+    margin-bottom: 2vh;
+    font-weight: 500;
 }
 
-.test .a .bb{
-    margin: auto;
-    float: none;
-}
-
-.test .a .cc{
+/****************************************/
+.mobile_button{
+    background-color: #01689b;
+    color: white;
+    padding: 2vw;
+    font-size: 2em;
+    border: none;
     float: right;
+    margin: -1.5vh 3vw;
 }
-
-/*start about*/
-
-.about{
-    height: 570px;
-    overflow: hidden;
-    margin-top: 26px;
-    
-}
-.secound{
-    height: 500px;
-}
-
-.about h1{
-    color: white;
-    text-align: center;
-    padding: 25px ;
-}
-
-.about .about1{
-    height: 500px;
-    width: 70%;
-    float: left; 
-}
-
-.about .about1 .img{
-    width: 92%;
-    height: 87%;
-    margin: 27px auto;
-    float: left;
-
-}
-
-.about .about1 .img img{
+/****************************************/
+/*
+instead of using javascript we have 2 searching engine's (simple togglling system).
+The first one for small screen's (which is default:block).
+The other one is for large screen's (which is default:hidden). */
+.linkslist,
+.search1,
+.search2{
     width: 100%;
-    height: 100%;
-    
-}
-
-.about .about2{
     float: left;
-    height:500px; 
-    width:30%;  
-    height: 500px;
-}
-
-.about .about2 .text{
-    
-    width: 100%;
-    height: 87%;
-    margin: 27px auto;
-    box-shadow: 6px 6px 10px 0px rgba(0,0,0,.5);
-   
-}
-
-.about .text2 .text{float: left}
-.about .img2 .img{float: right}
-
-.about .about2 .text h2{
-    color:skyblue;
-    text-align: center;
-    padding-top: 70px;
-    padding-bottom: 40px;
-    font-size: 40px;
-}
-
-.about .about2 .text p{
-    text-align: center;  
-    padding: 0px 35px;
-    line-height: 1.5;
-    font-size: 16px;
-    
-    color:bisque;
-    font-size: 18px;
-}
-.about span{
-    font-weight: bold;
-    font-size: 27px;
-    
-}
-/*End about*/
-/*start footer*/
-.footer{
-    height: 375px;
     overflow: hidden;
-    background-color: #373c46;
-    
 }
-
-.footer h1{
+.search1{
+    width: 150%;
+    margin-left: 5%;
+}
+.search1 button,
+.search2 button{
+    padding: 14px 15px;
+    border: none;
+    background-color: black;
     color: white;
-    text-align: center;
-    padding: 25px ;
+    margin-top: -2px;
 }
-
-.footer .conn{
-    width: 24%;
-    height: 279px;
+.search1 .searchinput,
+.search2 .searchinput{
+    min-width: 50%;
+    height: 49px;
+    border: none;
     float: left;
-    margin-left: 9px;
-   
+    padding-left: 10px;
+    margin: auto;
 }
-
-.footer .conn h3{
-    color: wheat;
-    padding-bottom: 23px;
-    padding-top: 16px;
+.search2{
+    display: none;
 }
-
-.footer .div1 p{
-   padding-bottom: 49px;
-   padding-right: 25px;
-   line-height: 25px;
-   color: gray;  
-   font-size: 16px;
-}
-.footer .div2 p {
-    padding-bottom: 15px;
-    padding-top: 10px;
-    color: gray;
-    border-bottom: 2px solid white;
- }
-
-.footer ul{
-     list-style: none;
-    
-}
-
-.footer ul li{
-    border-bottom: 2px solid white;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    
-    
-}
-.footer ul li a{
-    text-decoration: none;
-    color: gray;
-}
-
-
-.footer ul li a:hover{
-    color:skyblue;
-}
-
-.footer .conn .parent{
-    overflow: hidden;   
-}
-
-
-.footer .conn .text a,
-.footer .conn .text a:link{
-    text-decoration: none;
-}
-
-.footer .conn .icon{
-    float: left;
-    width: 25%;
-    text-align: center;
-    color: gray;
-    padding-top: 5px;
-}
-
-.footer .conn .text{
-    float: left;
+.search2 .searchinput{
     width: 75%;
-    color: gray;
-    line-height: 1.6;
+}
+/**************************************/
+.search1 .mobilelist{
+    margin: 0;
+    float: none;
+    transition: all .2s linear;
+    margin-top: 1.5vh;
+}
+.search1 .mobilelist li{
+    color: white;
+    display: block;
+    font-size: 1em;
+    text-align: left;
+    display: inline-block;
+    width: 86vw;
+    border-bottom: 1px solid white;
+    padding: 10px 0;
+    font-family: sans-serif;
+}
+.search1 .mobilelist li:first-child{
+    border-top: 1px solid white;
+}
+.show{
+    display: block;
+}
+/**************************************/
+section.photo-page{
+    width: 100%;
+    overflow: hidden;
+    background-image: url(img/minimumloon-winkel.jpg);
+    background-color: gray;
+    background-size: cover;
+    background-position: center;
+}
+.linkslist ul{
+    background-color: white;
+    padding: 2vw 3vw;
+    font-family: sans-serif;
+    margin: 4vw 3vw;
+}
+.linkslist ul li{
+    padding: .7vw 0;
+}
+.linkslist h2{
+    font-weight: 100;
+    font-size: 1.2em;
+}
+.linkslist ul li span{
+    color: #01689b;
+    display: inline-block;
+    font-weight: bold;
+    margin-right: 5px;  
+}
+.linkslist span i{
+    font-weight: bold;
+}
+.linkslist ul li a{
+    color: #01689b;
+    font-size: 1em;
+    text-decoration: none;
+    font-weight: 600;
+}
+/*******************/
+.articles ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #f3f3f3;
+    padding: 3vw 3vw;
+    font-family: sans-serif;
+}
+.articles ul li{
+    width: 100%;
+    padding: 2vw 0vw;
+}
+.articles ul li a{
+    color: #01689b;
+    text-decoration: none;
+    font-size: .8em;
+}
+.articles ul li a:hover{
+    text-decoration: underline;
+}
+.articles ul li p{
+    color:#000;   
+    font-family:"RO Sans",Calibri,sans-serif;
+}
+.art,
+.news{
+    width: 100%;
+    padding: 0vw 2vw;
+}
+.art{
+    margin-top: 6vw;
+}
+.news h2{
+    margin: 2vw;
+    margin-top: 1vw;
+    font-family:"RO Sans",Calibri,sans-serif;  
+    font-size: 1.7em;
+}
+.art ul,
+.news ul{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.art ul li,
+.news ul li{
+    width: calc(100% - 3vw);
+    margin: 0 1.5vw;
+    margin-bottom: 5vw;
+}
+.art ul li a:hover,
+.news ul li a:hover{
+    text-decoration: underline;
+}
+.news ul li:last-of-type{
+    margin-bottom: 0vw;
+    font-size: 1em;
+}
+.art img{
+    display: block;
+    width: 100%;
+}
+.art h3,
+.news h3{
+    color: #01689b;
+    font-size: 1.8em;
+    font-weight: 100;
+    margin-top: 2vw;
+    margin-bottom: 3vw;
+    font-family:"RO Sans",Calibri,sans-serif;
+}
+.art ul li a,
+.news ul li a{
+    text-decoration: none;
+    color: #01689b;
+    font-weight: bolder;
+}
+.news ul li h3:last-child{
+    color: red;
+    font-size: 1.3em;
+    font-weight: bolder;
+}
+.art p,
+.news p{
+    color: black;
+    font-family:"RO Sans",Calibri,sans-serif;
+}
+.news span{
+    color: black;
+    font-family:"RO Sans",Calibri,sans-serif;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 3vw;
+}
+hr{
+    width: 93vw;
+    margin: auto;
+    margin-bottom: 4vw;
+}
+/*******************/
+.moreinfo{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.moreinfo ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
+}
+.moreinfo ul li{
+    border: .2em solid #CBD2E3;
+    width: calc(85%);
+    padding: 2vw 2.8vw;
+    text-align: center;
+    font-size: 1.1em;
+    margin: auto;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+.moreinfo ul li h3{
+    font-size: 1.8em;
+    color: #01689b;
+    font-family: "RO Sans",Calibri,Verdana,sans-serif;
+    margin-bottom: 3vw;
+}
+.moreinfo ul li h3:nth-child(2){
+    color: #a90061;
+}
+.moreinfo ul li p{
+    color: black;
+    font-size: 2em;
+    font-weight: 500;
+    font-family: "RO Sans",Calibri,sans-serif;
+    margin-top: 4vw;
+    margin-bottom: 3vw;
+}
+footer{
+    width: 100%;
+}
+footer .list{
+    width: 100%;
+    display: flex;
+}
+footer .service{
+    background-color: #01689b;
+    padding: 2vw;
+    padding-bottom: 7vw;
+    margin-bottom: 3vw;
+}
+footer .service span{
+    color: white;
+    font-size: 1em;
+    font-family:"RO Sans",Calibri,sans-serif;
+    display: block;    
+}
+footer .service ul{
+    font-family:"RO Sans",Calibri,sans-serif;
+    width: 50%;
+}
+footer .service span{
+    padding: 5vw 2vw;
+    font-size: 1.5em;
+    font-family:"RO Sans",Calibri,sans-serif;
+}
+footer .service ul li{
+    padding: .8vw;
+}
+footer .service ul li a{
+    color: white;
+  
+}  
+footer .service ul li a:hover{
+    color: white;
+}  
+footer .service h3{
+    font-size: 1.5em;
+    color: white;
+    font-weight: 100;
+}
+/*******************/
+.language{ 
+    margin: auto;
     margin-bottom: 20px;
+    width: 76%;
+    display: flex;
+    flex-wrap: wrap;
 }
-.footer .conn .text a{
-    color:skyblue;
+.language span{
+    border: 1px solid #CBD2E3;
+    padding: 1vh 2vw;
+    text-align: center;
+    margin: 0.5vw;
+    font-size: 1em;
+    display: inline-block;
+    color: #01689b;
+    font-family:"RO Sans",Calibri,sans-serif;
 }
-
-.footer .conn .text a:hover{
-    color:gray;
+.language span:first-child{
+    border: none;
+    color: black;
+    font-weight: bold;
 }
-/*End footer*/
-
-
-
-
-
-
-
-
-
-
-
-
+/******************************************************/
+@media (min-width: 480px){
+    .moreinfo ul li h3,
+    .moreinfo ul li h3:nth-child(2) {
+        font-size: 3.5em;
+        margin: 0;
+    }
+    .moreinfo ul li p{
+        font-size: 3em;
+        margin: 0;
+    }
+    nav span{
+        margin-bottom: 2%;
+        margin-left: 3%;
+        margin-top: 1.9%;
+    }
+    .search1 {
+        width: 162%;
+        margin-left: 5%;
+    }
+    .art ul li, .news ul li {
+        width: calc(100%/2 - 3vw);
+    }
+    .moreinfo ul li{
+        width: calc(90%/2 - 4vw);
+        font-size: .6rem;
+        margin: auto;
+        height: 100%;
+        overflow: hidden;
+        border: .3em solid #CBD2E3;
+    }
+}
+/******************************************************/
+@media (min-width: 768px){
+    nav{
+        padding: 3px 0;
+    }
+    .home{
+        margin-left: 3vw;
+        margin-bottom: 1vw;
+    }
+    .mobile_button{
+        display: none;
+    }
+    .search1 {
+        display: none;
+    }
+    .search2 {
+        display: block;
+        float: left;
+        width: calc(100%/2 - 10vw);
+        margin-top: 4vw;
+        margin-left: 10vw;
+    }
+    .search1 button, .search2 button {
+        padding: 16px 15px;
+    }
+    .linkslist{
+        width: 50%;
+    }
+    nav ul{
+        display: inline-block;
+        margin-top: 2.2vw;
+    }
+    .articles ul li,
+    .art ul li, 
+    .news ul li,
+    .moreinfo ul li{
+        width: calc(100%/2 - 3vw);
+    }
+    .moreinfo ul li{
+        width: calc(100%/2 - 3vw);
+        font-size: .8rem;
+    }
+    footer .service{
+        display: flex;
+    }
+    footer .secound{
+        width: 100%;
+        display: flex;
+        margin-top: 50px;
+    }
+    footer .service ul h3{
+        font-weight: bolder;
+    }
+}
+/******************************************************/
+@media (min-width: 992px){
+    .moreinfo ul li {
+        width: calc(100%/2 - 14vw);
+        font-size: .6rem;
+        margin: 0px 25px 0px 18px;
+    }
+    .linkslist ul{
+        width: 60%;
+        padding: 1vw 1vw;
+    }
+    .articles ul li{
+        width: calc(100%/4 - 3vw);
+    }
+    .art ul li, 
+    .news ul li{
+        width: calc(100%/3 - 3vw);
+    }
+    footer .service{
+        background-color: #01689b;
+        padding: 0vw;
+        padding-top: -2vw;
+        padding-bottom: 2vw;
+    }
+    footer .service ul{
+        width: 33%;
+    }
+}
